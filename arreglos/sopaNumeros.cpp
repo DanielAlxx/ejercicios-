@@ -4,11 +4,13 @@ int sopa [10][10],
 		numero[ 4 ],
 		n,k,encontrado;
 
-void print(){
 
-	for (int i = 0; i < 10; i++ )
+
+void print( int n , int m ){
+
+	for (int i = 0; i < n; i++ )
 	{
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < m ; j++)
 		{
 			printf("%d ", sopa[ i ][ j ]);
 		}
@@ -19,8 +21,8 @@ void print(){
 	printf("[ %d %d %d %d ]\n", numero[ 0 ], numero[ 1 ], numero[ 2 ], numero[ 3 ] );
 
 	printf("\n\n");
-}
 
+}
 
 int main(){
 
@@ -34,7 +36,7 @@ int main(){
 	for (int i = 0; i < 4 ;  i++ )
 		scanf("%d" , &numero[ i ]);
 
-	print();
+	print( 10 , 10 );
 
 	//busqueda horizontal
 	
@@ -91,3 +93,4 @@ int main(){
 
 
 }
+
